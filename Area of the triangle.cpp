@@ -26,17 +26,34 @@ int main()
 //}
 //cout<<"Total number of even"<<"\t"<<even<<endl;
 //cout<<"Total number of odd"<<"\t"<<odd<<endl;
-int height;
-cout<<"Enter the height of L shape"<<endl;
-cin>>height;
-for (int i=0;i<height-1;i++)
+//int height;
+//cout<<"Enter the height of L shape"<<endl;
+//cin>>height;
+//for (int k=0;k<3;k++)
+//{
+//	cout<<endl;
+//for (int i=0;i<height-1;i++)
+//{
+//	cout<<"*"<<endl;
+//}
+//for (int i=0;i<height;i++)
+//{
+//	cout<<"* ";
+//}
+//cout<<endl;	
+//}
+int a=0;
+int b=1;
+for (int i=1;i<=10;i++)
 {
-	cout<<"*\n";
+	a=a+b;
+	b= a-b;
+	if(a==21)
+	continue;
+	cout<<a<<endl;
 }
-for (int i=0;i<height;i++)
-{
-	cout<<"*";
-}
+cout<<"Process end"<<endl;
+
 }
 
 
