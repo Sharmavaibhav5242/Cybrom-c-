@@ -26,18 +26,16 @@ int main()
 //}
 //cout<<"Total number of even"<<"\t"<<even<<endl;
 //cout<<"Total number of odd"<<"\t"<<odd<<endl;
-for (int k=0;k<=3;k++)
+int height;
+cout<<"Enter the height of L shape"<<endl;
+cin>>height;
+for (int i=0;i<height-1;i++)
 {
-	for(int i=0;i<3;i++)
-{
-	cout<<i<<"=";
-	for (int j=i;j<3;j++)
-	{
-		cout<<" "<<"*";
-	}
-	cout<<endl;
+	cout<<"*\n";
 }
-cout<<endl;
+for (int i=0;i<height;i++)
+{
+	cout<<"*";
 }
 }
 
