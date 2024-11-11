@@ -42,17 +42,17 @@ int main()
 //}
 //cout<<endl;	
 //}
-int a=0;
-int b=1;
-for (int i=1;i<=10;i++)
-{
-	a=a+b;
-	b= a-b;
-	if(a==21)
-	continue;
-	cout<<a<<endl;
-}
-cout<<"Process end"<<endl;
+//int a=0;
+//int b=1;
+//for (int i=1;i<=10;i++)
+//{
+//	a=a+b;
+//	b= a-b;
+//	if(a==21)
+//	continue;
+//	cout<<a<<endl;
+//}
+//cout<<"Process end"<<endl;
 
 }
 
