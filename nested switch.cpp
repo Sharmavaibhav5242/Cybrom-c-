@@ -2,6 +2,9 @@
 using namespace std;
 int main()
 {
+	goto skip;
+	cout<<"termibatewt"<<endl;
+	skip:
  cout<<"1.international"<<"\t"<<"2.domestic"<<endl;
  int num;
  cin>>num;
@@ -31,6 +34,7 @@ int main()
  	break;
  	default:cout<<"Error"<<endl;
  	break;
+ 	
  	
 
  }
