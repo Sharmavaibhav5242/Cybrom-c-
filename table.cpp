@@ -3,17 +3,16 @@
 using namespace std;
 int main ()
 {
-int a=0;
-int b=1;
-int c;
+int n=0;
+int sum=0;
 for (int i=1;i<=5;++i)
 {
-	c=a+b;
-	a=b;
-	b=c;
-	cout<<a;
-		
+	n=n*10+1;
+	sum=sum+n;
+	
 	}	
+	cout<<sum;
+	
 }
 
 
