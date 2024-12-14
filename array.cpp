@@ -264,6 +264,25 @@ int main ()
 //  cout<<arr[k-1];
 // 
 //}
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int arr[]={10,20,50,40};
+    int j;
+    for(int i=0;i<5;++i)
+    {
+        if(arr[i]>arr[i+1])
+        { 
+            int temp;
+            temp=arr[i];
+            arr[i]=arr[j];
+            arr[j]=temp;
+        }
+        cout<<arr[i];
+    }
+    
+}
 
 
 
