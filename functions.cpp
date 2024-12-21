@@ -107,3 +107,81 @@
 // first:: display();
 // second::display();
 //}
+//#include <iostream>
+//using namespace std;
+//void rev(string &str)
+//{
+//    int start=0;
+//    int end=str.length()-1;
+//    while(start<end)
+//    {
+//        char temp;
+//        temp=str[start];
+//        str[start]=str[end];
+//        str[end]=temp;
+//        
+//        start++;
+//        end--;
+//    }
+//}
+//int main()
+//{
+//   string str="vansh";
+//   rev(str);
+//   cout<<str;
+// }
+//#include <iostream>
+//using namespace std;
+//bool pal( string &str)
+//{
+//int start=0;
+//int end=str.length()-1;
+//while(start<end)  
+//{
+//    if(str[start]!=str[end])
+//    {
+//        cout<<"not a palindrome";
+//        return false;
+//    }
+//    start++;
+//    end--;
+//    
+//   
+//}
+//    return true;
+//}
+//int main()
+//{
+//
+//string str="aman";
+//if(pal(str))
+//{
+//    cout<<"pallindrome";
+//}
+//
+//
+//
+//}
+//#include <iostream>
+//using namespace std;
+//void toggle(string &str)
+//{
+//    for(int i=0;i<str.length();++i)
+//    {
+//        // char ch=str[i];
+//        if(str[i]>='A' && str[i]<='Z')
+//        {
+//            str[i]=str[i]+32;
+//        }
+//        else if(str[i]>='a' && str[i]<='z')
+//        {
+//            str[i]=str[i]-32;
+//        }
+//    }
+//}
+//int main()
+//{
+//    string str="VANSH";
+//    toggle(str);
+//    cout<<str;
+//}
