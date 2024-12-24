@@ -257,39 +257,72 @@
 //   }
 //    
 //}
+//#include <iostream>
+//using namespace std;
+//bool anagram(string &str1,string &str2)
+//{
+//    char count[256]={0};
+//    if(str1.length()!=str2.length())
+//    {
+//        return false;
+//    }
+//    for(int i=0;i<str1.length();++i)
+//    {
+//        count[str1[i]]++;
+//        count[str2[i]]--;
+//    }
+//    for(int i=0;i<str1.length();++i)
+//    {
+//        if(count[i]!=0)
+//        {
+//            return false;
+//        }
+//    }
+//    return true;
+//}
+//int main()
+//{
+//    string str1="bittu";
+//    string str2="titub";
+//    if(anagram(str1,str2))
+//    {
+//        cout<<"Anagram";
+//    }
+//    else
+//    {
+//        cout<<"Not an anagram";
+//    }
+//}
 #include <iostream>
 using namespace std;
-bool anagram(string &str1,string &str2)
+bool subseq(string &str1, string &str2)
 {
-    char count[256]={0};
-    if(str1.length()!=str2.length())
+    int j=0;
+    char m=str1.length();
+    char n=str2.length();
+    for(int i=0;i<m;++i)
     {
-        return false;
-    }
-    for(int i=0;i<str1.length();++i)
-    {
-        count[str1[i]]++;
-        count[str2[i]]--;
-    }
-    for(int i=0;i<str1.length();++i)
-    {
-        if(count[i]!=0)
+        if(str1[i]==str2[j])
         {
-            return false;
+            j++;
         }
     }
-    return true;
+    if(n==j)
+    {
+        return true;
+    }
+    return false;
 }
 int main()
 {
-    string str1="bittu";
-    string str2="titub";
-    if(anagram(str1,str2))
+    string str1="ABCDE";
+    string str2="ACB";
+    if((subseq(str1,str2)))
     {
-        cout<<"Anagram";
+        cout<<"Subsequence";
     }
     else
     {
-        cout<<"Not an anagram";
+        cout<<"Not a subsequence";
     }
 }
