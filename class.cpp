@@ -1,16 +1,28 @@
 #include <iostream>
 using namespace std;
-class info{
+class A 
+{
 	public:
-  string name="Vaibhav";
-  int age=20;
-  void display()
+  int roll=123;
+  void show()
   {
-  	cout<<name<<endl<<age;
-  }
+  	cout<<roll;
+	  }	
+};
+class B:virtual public A
+{
+	
+};
+class C:virtual public A
+{
+	
+};
+class D:public B,public C
+{
+	
 };
 int main()
 {
-	info a;
-	a.display();
+	D obj;
+	obj.show();
 }
